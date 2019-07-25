@@ -266,7 +266,7 @@ uint64_t Parser::get_dynamic_string_table(void) const {
   if (offset == 0) {
     offset = this->get_dynamic_string_table_from_sections();
   }
-  CHECK_NE(offset, 0);
+  CHECK_NE(offset, 0)
   return offset;
 }
 
